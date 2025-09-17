@@ -8,12 +8,15 @@ export const Route = createRootRoute({
 function RootComponent() {
   return (
     <React.Fragment>
-      <Link activeProps={{ className: "text-blue font-bold" }} to="/">
-        Main Page
-      </Link>
-      <Link activeProps={{ className: "text-blue font-bold" }} to="/about">
-        About Us
-      </Link>
+      <h1>My App</h1>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/profile">Profile</Link>
+        </li>
+      </ul>
       <Outlet />
     </React.Fragment>
   );
